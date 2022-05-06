@@ -1,7 +1,8 @@
 # main.py
 
 # time to import
-from flask import Flask
+import os
+from flask import Flask, json
 # make flask work
 app = Flask(__name__)
 
