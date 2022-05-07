@@ -1,5 +1,3 @@
-# I will do this later
-
 apikey = "please-change"
 
 # you can find these with https://www.latlong.net/
