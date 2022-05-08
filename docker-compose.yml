@@ -6,7 +6,7 @@ services:
     image: ghcr.io/lambda-byte/weather-prometheus
     container_name: weather-prometheus
     ports:
-      - "5025:5025" # Replace with "8080:8080" if you don't use a reverse proxy
+      - "5025:5025"
     volumes:
       - ./config.py/:/home/weather/config.py
     restart: unless-stopped
