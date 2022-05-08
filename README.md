@@ -6,5 +6,5 @@ You need an OpenWeather API Key https://openweathermap.org/price
 
 Things you need to install
 ```
-pip install flask wget APScheduler python-dotenv
+pip install flask wget python-dotenv
 ```
