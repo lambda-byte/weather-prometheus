@@ -18,3 +18,9 @@ url = "https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&units=%s&ap
 
 def json_download():
       wget.download(url, "weather.json")
+
+json_download()
+
+while True:
+      sleep(int(scrape_time_value) - time() % int(scrape_time_value))
+      json_download()
