@@ -47,6 +47,39 @@ def hello_world():
             "# weather description <br>" \
             "weather_description %s <br>"\
             "# latest precipitation <br>" \
-            "latest_precipitation %s </pre>" \
-            % (data["current"]["dt"], data["current"]["temp"], data["current"]["feels_like"], data["current"]["wind_speed"],
-               data["current"]["dew_point"], data["current"]["weather"][0]["description"], data["minutely"][0]["precipitation"])
+            "latest_precipitation %s <br>" \
+            "# 7 day forcast <br>" \
+            "day_0_day_temp %s <br>" \
+            "day_1_day_temp %s <br>" \
+            "day_2_day_temp %s <br>" \
+            "day_3_day_temp %s <br>" \
+            "day_4_day_temp %s <br>" \
+            "day_5_day_temp %s <br>" \
+            "day_6_day_temp %s <br>" \
+            "day_7_day_temp %s <br>" \
+            "# 7 day min temp <br>"  \
+            "day_0_min_temp %s <br>" \
+            "day_1_min_temp %s <br>" \
+            "day_2_min_temp %s <br>" \
+            "day_3_min_temp %s <br>" \
+            "day_4_min_temp %s <br>" \
+            "day_5_min_temp %s <br>" \
+            "day_6_min_temp %s <br>" \
+            "day_7_min_temp %s <br>" \
+            "# 7 day max temp <br>"  \
+            "day_0_max_temp %s <br>" \
+            "day_1_max_temp %s <br>" \
+            "day_2_max_temp %s <br>" \
+            "day_3_max_temp %s <br>" \
+            "day_4_max_temp %s <br>" \
+            "day_5_max_temp %s <br>" \
+            "day_6_max_temp %s <br>" \
+            "day_7_max_temp %s </pre>" \
+           %  (data["current"]["dt"], data["current"]["temp"], data["current"]["feels_like"], data["current"]["wind_speed"],
+               data["current"]["dew_point"], data["current"]["weather"][0]["description"], data["minutely"][0]["precipitation"],
+               data["daily"][0]["temp"]["day"], data["daily"][1]["temp"]["day"], data["daily"][2]["temp"]["day"], data["daily"][3]["temp"]["day"],
+               data["daily"][4]["temp"]["day"], data["daily"][5]["temp"]["day"], data["daily"][6]["temp"]["day"], data["daily"][7]["temp"]["day"],
+               data["daily"][0]["temp"]["day"], data["daily"][1]["temp"]["min"], data["daily"][2]["temp"]["min"], data["daily"][3]["temp"]["min"],
+               data["daily"][4]["temp"]["min"], data["daily"][5]["temp"]["min"], data["daily"][6]["temp"]["min"], data["daily"][7]["temp"]["min"],
+               data["daily"][0]["temp"]["max"], data["daily"][1]["temp"]["max"], data["daily"][2]["temp"]["max"], data["daily"][3]["temp"]["max"],
+               data["daily"][4]["temp"]["max"], data["daily"][5]["temp"]["max"], data["daily"][6]["temp"]["max"], data["daily"][7]["temp"]["max"])
