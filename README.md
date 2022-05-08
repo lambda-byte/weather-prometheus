@@ -4,16 +4,18 @@ Using OpenWeather One Call API https://openweathermap.org/api/one-call-api
 
 You need an OpenWeather API Key https://openweathermap.org/price
 
-# Things you need to install
-```
-pip install flask wget python-dotenv
-```
+
 
 
 # How to run
 You need to fill in data in ```config-example.py``` and rename it to ```config.py``` before you run it
 
 ## Flask
+
+Things you need to install
+```
+pip install flask wget python-dotenv
+```
 
 To run with Flask first clone the repo
 ```
