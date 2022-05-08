@@ -39,10 +39,11 @@ with open(json_name) as json_data:
     data = json.load(json_data)
 
 
+
 # wip route
 @app.route("/metrics")
 def hello_world():
-    return data["current"]
+    return str(data ["current"])
 
 
 
