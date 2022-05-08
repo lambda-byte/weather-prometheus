@@ -4,7 +4,7 @@ Using OpenWeather One Call API https://openweathermap.org/api/one-call-api
 
 You need an OpenWeather API Key https://openweathermap.org/price
 
-You also need Flask to run this.
+Things you need to install
 ```
-pip install flask
+pip install flask wget APScheduler python-dotenv
 ```
