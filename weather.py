@@ -37,14 +37,16 @@ def hello_world():
     return "<pre># unix time from last json download <br>" \
             "weather_scrape_dt %s <br>" \
             "# current temp <br>" \
-            "weather_current_temp %s <br>" \
+            "current_temp %s <br>" \
             "# what it feels like outside <br>" \
-            "weather_current_feels_like %s <br>" \
+            "current_feels_like %s <br>" \
             "# wind speed <br>" \
-            "weather_current_wind_speed %s <br>" \
+            "current_wind_speed %s <br>" \
             "# dew point <br>" \
-            "weather_current_dew_point %s <br>" \
-            " </pre>" \
+            "current_dew_point %s <br>" \
+            "# weather description <br>" \
+            "weather_description %s <br>"\
+            "# latest precipitation <br>" \
+            "latest_precipitation %s </pre>" \
             % (data["current"]["dt"], data["current"]["temp"], data["current"]["feels_like"], data["current"]["wind_speed"],
-               data["current"]["dew_point"])
-
+               data["current"]["dew_point"], data["current"]["weather"][0]["description"], data["minutely"][0]["precipitation"])
