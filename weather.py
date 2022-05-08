@@ -43,7 +43,7 @@ with open(json_name) as json_data:
 # wip route
 @app.route("/metrics")
 def hello_world():
-    return str(data ["current"])
+    return str(data ["current"]["dt"])
 
 
 
