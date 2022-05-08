@@ -31,5 +31,17 @@ flask --host 0.0.0.0 --port 5025
 ```
 
 
-## Docker
+## Docker using docker-compose
 
+Download docker-compose.yml and config-example.py
+```
+wget https://raw.githubusercontent.com/lambda-byte/weather-prometheus/main/docker-compose.yml
+wget https://raw.githubusercontent.com/lambda-byte/weather-prometheus/main/config-example.py
+```
+
+Fill in data in config-example.py then rename it to config.py
+
+Start container
+```
+docker-compose up
+```
