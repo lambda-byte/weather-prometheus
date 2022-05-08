@@ -4,7 +4,8 @@
 from config import *
 import os
 import wget
-from flask import Flask, json
+from flask import Flask
+import json
 import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 
@@ -34,10 +35,15 @@ json_download()
 scheduler.add_job(func=json_download, trigger="interval", seconds=int(scrape_time_value))
 scheduler.start()
 
+with open(json_name) as json_data:
+    data = json.load(json_data)
+
+
 # wip route
-@app.route("/")
+@app.route("/metrics")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return data["current"]
+
 
 
 # Shut down the scheduler when exiting the app
